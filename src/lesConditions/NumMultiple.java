@@ -11,7 +11,7 @@ public class NumMultiple {
         // demande d'information
         System.out.println("Saisir un numero: ");
         num = scanner.nextInt();
-        
+
         // verification de la condition
         if (num % 10 == 0) {
             System.out.println("Le numero saisi est multiple de 10");
