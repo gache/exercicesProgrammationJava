@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Pyramide {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Saisir un numero: ");
 
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
         System.out.println("Debut de ma boucle:\n");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i; j++) {
