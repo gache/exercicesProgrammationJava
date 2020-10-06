@@ -1,5 +1,7 @@
 package clasesPredifini;
 
+import java.util.Arrays;
+
 public class ClassString {
 
     // les methodes plus utilisés de la class String
@@ -13,6 +15,7 @@ public class ClassString {
       String chaine = "Hola soy Erick";
       String chaine2 = "hola soy Erick";
       String chaine3 = "Aujourd'hui c'est un jour magnifique pour appredre Java";
+
 
       int finLettre = chaine.length();
         System.out.println(chaine);

@@ -2,7 +2,7 @@ package clasesPredifini;
 
 public class ClassMath {
     public static void main(String[] args) {
-        // sqrt() pour faire la recine carrée
+        // sqrt() pour faire la racine carrée
         double racine = Math.sqrt(9);
         // sqrt de la clase Math fonctione avec double elle me retourne un valeur de type double
 
