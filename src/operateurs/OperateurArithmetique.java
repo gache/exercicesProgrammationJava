@@ -14,11 +14,11 @@ public class OperateurArithmetique {
         numero2 = entradaDatos.nextFloat();
 
         // Je fais les operations
-        addition  = numero1+numero2;
-        moins = numero1-numero2;
-        fois = numero1*numero2;
-        div   = numero1/numero2;
-        module = numero1%numero2;
+        addition  = numero1 + numero2;
+        moins = numero1 - numero2;
+        fois = numero1 * numero2;
+        div   = numero1 / numero2;
+        module = numero1 % numero2;
 
         //J'imprime en console
         System.out.println("La addition est: " + addition);
