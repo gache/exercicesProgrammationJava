@@ -4,19 +4,22 @@ import javax.swing.*;
 
 public class VerificationMail {
     public static void main(String[] args) {
-        boolean arobase = false;
+        int arobase = 0;
+        boolean point = false;
         String mail = JOptionPane.showInputDialog("Saisir votre mail: ");
 
-        for (int i = 0; i < mail.length(); i++){
+        for (int i = 0; i < mail.length(); i++) {
             if (mail.charAt(i) == '@') {
-                arobase = true;
-                break;
+                arobase++;
+            }
+            if (mail.charAt(i) == '.') {
+                point = true;
             }
         }
-        if(arobase){
-            System.out.println("mail correcte");
-        }else {
-            System.out.println("mail n'est pas correcte");
+        if (arobase == 1 && point) {
+            System.out.println("Le mail est correcte");
+        } else {
+            System.out.println("Le mail n'est pas correcte");
         }
 
     }

@@ -2,7 +2,7 @@ package boucles.boucleFor;
 
 import java.util.Scanner;
 
-public class ChercherMot {
+public class MotRepeter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Veuillez saisir un mot :");
@@ -26,9 +26,7 @@ public class ChercherMot {
                 plusGrand = counts[i];
 
             }
-
         }
-
 
         //System.out.println("la lettre qui se repete le plus est "+ plusGrand );
         for (i = 0; i < str.length(); i++) {
