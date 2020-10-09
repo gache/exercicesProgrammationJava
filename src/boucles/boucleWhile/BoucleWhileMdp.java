@@ -1,4 +1,4 @@
-package boucles;
+package boucles.boucleWhile;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class BoucleWhileMdp {
             System.out.println("Saisir le mot de pass \n");
             mdp2 = scanner.nextLine();
 
-            if (!mdp.equals(mdp2)){
+            if (!mdp.equals(mdp2)) {
                 System.out.println("Mot de passe incorrecte\n");
             }
         }

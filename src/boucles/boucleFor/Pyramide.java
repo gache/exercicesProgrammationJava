@@ -1,4 +1,4 @@
-package boucles;
+package boucles.boucleFor;
 
 import java.util.Scanner;
 
@@ -13,7 +13,8 @@ public class Pyramide {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i; j++) {
                 System.out.print(" ");
-            }for (int j2 = 0; j2 <= i; j2++) {
+            }
+            for (int j2 = 0; j2 <= i; j2++) {
                 System.out.print("* ");
             }
             System.out.println();
