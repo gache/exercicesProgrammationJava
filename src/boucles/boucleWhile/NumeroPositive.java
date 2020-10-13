@@ -13,7 +13,6 @@ public class NumeroPositive {
             System.out.println("Saisir un numéro: ");
             numero = scanner.nextInt();
             somme++;
-
         }
         System.out.println("Le totale de numeros saisie est de: " + somme);
     }
