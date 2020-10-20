@@ -19,8 +19,9 @@ public class Voiture2 {
         poidVoiture = 500;
     }
 
-    public void setCouleur() {
-        couleur = "Bleu";
+    public void setCouleur(String couleurVoiture) {
+        // couleur = "Bleu";
+        this.couleur = couleurVoiture;
     }
 
     public String getCouleur() {
@@ -35,8 +36,51 @@ public class Voiture2 {
         this.climatisation = climatisation;
     }
 
-    public void setChaiseCuire(boolean chaiseCuire) {
-        this.chaiseCuire = chaiseCuire;
+    // configuration de la chaise
+    public void setChaiseCuire(String chaiseCuire) {
+        if (chaiseCuire.equals("oui")) {
+            this.chaiseCuire = true;
+        } else {
+            this.chaiseCuire = false;
+        }
+    }
+
+    public String chaise() {
+        if (chaiseCuire) {
+            return "La voiture a chaise en cuire";
+        } else {
+            return "La voiture a chaise en serie";
+        }
+    }
+
+    public void setClimatisation(String climatisation) {
+        if (climatisation.equals("oui")) {
+            this.climatisation = true;
+        } else {
+            this.climatisation = false;
+        }
+    }
+
+    public String climatisation() {
+        if (climatisation) {
+            return "La voiture a la climatisation";
+        } else {
+            return "La voiture n'a pas la climatisationn";
+        }
+    }
+
+    public int prixVoiture() {
+        int prixFinal = 10000;
+
+        if (chaiseCuire) {
+            prixFinal += 2000;
+        }
+
+        if (climatisation) {
+            prixFinal += 1500;
+
+        }
+        return prixFinal;
     }
 
     public int getRoue() {
@@ -44,7 +88,7 @@ public class Voiture2 {
     }
 
     public void setRoue(int roue) {
-        this.roue = roue;
+
     }
 
     public int getLargeur() {
@@ -78,5 +122,6 @@ public class Voiture2 {
     public void setPoid(int poid) {
         this.poidVoiture = poid;
     }
+
 
 }
