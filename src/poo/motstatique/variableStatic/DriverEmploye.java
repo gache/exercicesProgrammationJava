@@ -1,4 +1,4 @@
-package motstatique.variableStatic;
+package poo.motstatique.variableStatic;
 
 public class DriverEmploye {
     public static void main(String[] args) {

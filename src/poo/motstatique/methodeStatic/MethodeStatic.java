@@ -1,4 +1,4 @@
-package motstatique.methodeStatic;
+package poo.motstatique.methodeStatic;
 
 public class MethodeStatic {
     private final String prenom; // c'est une constante

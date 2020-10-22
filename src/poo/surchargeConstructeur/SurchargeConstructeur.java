@@ -1,22 +1,27 @@
-package poo.constructeurParametre2;
+package poo.surchargeConstructeur;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Employe {
+public class SurchargeConstructeur {
     private String nom;
     private double salaire;
     private Date finContrat;
 
-    public Employe(String nom, double salaire, int annee, int mois, int jour) {
+    public SurchargeConstructeur(String nom, double salaire, int annee, int mois, int jour) {
         this.nom = nom;
         this.salaire = salaire;
-        GregorianCalendar calendar = new GregorianCalendar( annee, mois, jour);
+        GregorianCalendar calendar = new GregorianCalendar(annee, mois, jour);
         finContrat = calendar.getTime();
     }
 
-    public Employe(String pablo) {
+    public SurchargeConstructeur(String nom) {
+       // this.nom = nom; // pour recuperer un seul parametre
+        this(nom, 3000, 2000, 01,01);
+        // comme je recepere le parametre nom. je peux initialiser par defaut les autres parametres qui font appel à  l'autre constructeur
     }
+
+
 
     public String getNom() {
         return nom;

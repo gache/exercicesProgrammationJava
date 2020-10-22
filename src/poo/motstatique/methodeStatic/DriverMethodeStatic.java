@@ -1,6 +1,4 @@
-package motstatique.methodeStatic;
-
-import motstatique.variableStatic.EmployeConstante;
+package poo.motstatique.methodeStatic;
 
 public class DriverMethodeStatic {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package motstatique.variableStatic;
+package poo.motstatique.variableStatic;
 // consequence qu'un varibal soit static
 public class EmployeConstante {
 

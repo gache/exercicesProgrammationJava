@@ -38,7 +38,7 @@ public class UsageEmploye {
 
         for (Employe e2 : mesEmployes
         ) {
-            System.out.println("Le nom: " + e2.getNom() + " Salaire: "  +e2.getSalaire() + " Fin contrat: " + e2.getFinContrat());
+            System.out.println("Le nom: " + e2.getNom() + " Salaire: " + e2.getSalaire() + " Fin contrat: " + e2.getFinContrat());
         }
         // Avec la boucle for
 
@@ -52,6 +52,11 @@ public class UsageEmploye {
 
 
 class Employe {
+    private String nom;
+    private double salaire;
+    private Date finContrat;
+
+
     public Employe(String nom, double salaire, int annee, int mois, int jour) {
         this.nom = nom;
         this.salaire = salaire;
@@ -59,10 +64,6 @@ class Employe {
         finContrat = calendar.getTime();
 
     }
-
-    private String nom;
-    private double salaire;
-    private Date finContrat;
 
 
     public String getNom() {

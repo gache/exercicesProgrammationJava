@@ -1,9 +1,10 @@
-package poo.constructeurParametre2;
+package poo.heritage.bonDisigHeritage;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class Employe {
+
     private String nom;
     private double salaire;
     private Date finContrat;
@@ -11,11 +12,14 @@ public class Employe {
     public Employe(String nom, double salaire, int annee, int mois, int jour) {
         this.nom = nom;
         this.salaire = salaire;
-        GregorianCalendar calendar = new GregorianCalendar( annee, mois, jour);
+        GregorianCalendar calendar = new GregorianCalendar( annee, mois - 1, jour);
         finContrat = calendar.getTime();
     }
 
-    public Employe(String pablo) {
+    public Employe(String nom) {
+        // this.nom = nom; // pour recuperer un seul parametre
+        this(nom, 3000, 2000, 01,01);
+        // comme je recepere le parametre nom. je peux initialiser par defaut les autres parametres qui font appel à  l'autre constructeur
     }
 
     public String getNom() {
@@ -42,9 +46,8 @@ public class Employe {
         this.finContrat = finContrat;
     }
 
-    public void augmenterSalaire(double porcentage) {
-        double aumentation = (salaire * porcentage) / 100;
-        salaire += aumentation;
-
+    public void augmenterSalaire(double porcetage) {
+        double augmentation = (salaire * porcetage) / 100;
+        salaire += augmentation;
     }
 }

@@ -9,8 +9,8 @@ public class Numeros {
         System.out.println("Saisir un numero: ");
         int numero = scanner.nextInt();
 
-        for (int i = 0; i < numero; i++){
-            System.out.println(i);
+        for (int i = 0; i < numero; i++) {
+            System.out.println(i + 1);
         }
     }
 }
