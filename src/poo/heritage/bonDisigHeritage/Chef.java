@@ -8,9 +8,6 @@ public class Chef extends Employe {
         super(nom, salaire, annee, mois, jour);
     }
 
-    public Chef(String nom) {
-        super(nom);
-    }
 
     public void setPrime(double prime) {
         this.prime = prime;

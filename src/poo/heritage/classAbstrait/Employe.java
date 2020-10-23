@@ -1,18 +1,17 @@
-package poo.heritage.bonDisigHeritage;
+package poo.heritage.classAbstrait;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Employe {
+public class Employe extends Personne {
 
-    private String nom;
     private double salaire;
     private Date finContrat;
     private int id;
     private static int idIncrementation;
 
-    public Employe(String nom, double salaire, int annee, int mois, int jour) {
-        this.nom = nom;
+    public Employe( String prenom, double salaire, int annee, int mois, int jour) {
+        super(prenom);
         this.salaire = salaire;
         GregorianCalendar calendar = new GregorianCalendar(annee, mois - 1, jour);
         finContrat = calendar.getTime();
@@ -21,13 +20,13 @@ public class Employe {
     }
 
 
-    public String getNom() {
-        return nom + " ID: " + id;
-    }
+//    public String getNom() {
+//        return nom + " ID: " + id;
+//    }
 
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
+//    public void setNom(String nom) {
+//        this.nom = nom;
+//    }
 
     public double getSalaire() {
         return salaire;
@@ -50,4 +49,8 @@ public class Employe {
         salaire += augmentation;
     }
 
+    @Override
+    public String description() {
+        return "Cet employée a une Id: " + id + " avec Salaire: " + salaire + " date de fin contrat est: " + finContrat;
+    }
 }
